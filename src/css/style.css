@@ -1,0 +1,191 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* General Styling */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+/* google font */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+
+body {
+    background: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 0.75px;
+    line-height: 150%;
+}
+
+h1, h2, h3 {
+    font-weight: 300;
+    color: #1d1d1d;
+}
+
+strong, b {
+    font-weight: 600;
+    color: #1d1d1d;
+}
+
+.tal { text-align: left; }
+.tac { text-align: center; }
+.tar { text-align: right; }
+
+a {
+    text-decoration: none;
+    color: #2196f3;
+}
+
+img {
+    max-width: 100%;
+}
+
+.wrapper {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.page-title {
+    margin-top: 60px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+    margin-bottom: 40px;
+}
+
+button {
+    cursor: pointer;
+}
+
+body.loading * {
+    pointer-events: none;
+}
+
+body.loading {
+    cursor: wait;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Custom Grid - Did not want to bloat it with bootstrap */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.grid {
+	float: left;
+	margin-bottom: 2.127659574468%;
+	padding-top: 0;
+	box-sizing: border-box;
+}
+.col-1,.col-2,.col-3,.col-4,.col-5,.col-6,.col-7,.col-8,.col-9,.col-10,.col-11 {
+	display: inline;
+	margin-right: 2.127659574468%;
+}
+.col-1 {width: 6.382978723404%;}
+.col-2 {width: 14.893617021277%;}
+.col-3 {width: 23.404255319149%;}
+.col-4 {width: 31.914893617021%;}
+.col-5 {width: 40.425531914894%;}
+.col-6 {width: 48.936170212766%;}
+.col-7 {width: 57.446808510638%;}
+.col-8 {width: 65.957446808511%;}
+.col-9 {width: 74.468085106383%;}
+.col-10 {width: 82.978723404255%;}
+.col-11 {width: 91.489361702128%;}
+.col-12 {width: 100%;}
+
+.fit { margin-left: 0 !important; margin-right: 0 !important;}
+
+.clearfix { clear:both; }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Header */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+header {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 30px;
+}
+header .grid { margin-bottom: 0; }
+header .title { font-size: 12px; padding-top: 10px; }
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Controls */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 3px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: 600;
+    display: inline-block;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Project List */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+.ProductSingle {
+    padding: 20px;
+    background: #fff;
+    margin-bottom: 20px;
+}
+.project-controls {
+    margin-top: 30px;
+    border-top: 1px solid rgba(0,0,0,0.1);
+}
+
+.project-controls a {
+    border: none;
+    background: transparent;
+    padding: 0;
+    font-weight: 600;
+    color: #000;
+    opacity: 0.4;
+    margin: 20px 20px 0 0;
+    display: inline-block;
+    font-size: 12px;
+}
+.project-controls a:hover {
+    opacity: 0.8;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+/* Forms */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~ */
+
+form {
+    background: #fff;
+    padding: 20px;
+}
+fieldset {
+    border: none;
+    padding: 0;
+    margin-bottom: 20px;
+}
+
+fieldset input, fieldset textarea, fieldset label {
+    width: 100% !important;
+    padding: 15px 20px;
+    box-sizing: border-box;
+} 
+fieldset input, fieldset textarea {
+    border: 1px solid rgba(0,0,0,0.2);
+}
+fieldset label {
+    margin-bottom: 10px;
+    font-weight: 600;
+    padding: 0;
+    display: block;
+}
+form input[type="submit"] {
+    border: none !important;
+    padding: 15px 30px;
+    cursor: pointer;
+}
